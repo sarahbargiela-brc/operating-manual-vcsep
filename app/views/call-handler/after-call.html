@@ -1,0 +1,56 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/call-handler">Call handler</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">After a call</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What to do after a call</h1>
+
+      <ol class="govuk-list govuk-list--number">
+        <li>Take a break if it has been a difficult call 
+        <li><a href="/personal-information/forms">Record information from the call</a></li>
+        <li>Speak to your shift manager if there needs to be any follow actions</li>
+      </ol>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/call-handler/principles.html" %}
+        </li>
+        <li id="homepage-link-list">
+           {% include "nav-links/call-handler/start-calls.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/signposting.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/call-handler/finish-calls.html" %}
+        </li> 
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

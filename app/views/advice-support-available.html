@@ -1,0 +1,47 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Advice and support available</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Advice and support available through the support line</h1>
+      
+      <p class="govuk-body">People in emergencies can call the National Emergencies Support Line to speak to a trained adviser for advice and support, including:&nbsp;</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        {% include "includes/advice-support-available.html" %}
+      </ul>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/what-is-nesl.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/phone-number.html" %}
+        </li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

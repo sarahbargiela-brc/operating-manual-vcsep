@@ -1,0 +1,68 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/call-handler">Call handler</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">How to finish calls</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">How to finish calls</h1>
+
+      <p class="govuk-body">Every call will be different. There is no one way to finish the call.</p>
+
+      <p class="govuk-body">Check before you finish the call that you’ve covered:</p>
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li>Introduction</li>
+        <li>Caller’s name</li>
+        <li>Vulnerabilities they might have</li> 
+        <li>Support they need</li>
+        <li>Consent to share information</li>  
+        <li>Their location</li>
+        <li>Contact details</li>
+        <li>Confirm their next steps</li>  
+        <li>Say they can call again</li>
+      </ol>
+
+      <p style="margin-top: 10px;"><a href="/public/images/call-checklist.pdf" download>Download call checklist</a></p>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/call-handler/principles.html" %}
+        </li>
+        <li id="homepage-link-list">
+           {% include "nav-links/call-handler/start-calls.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/signposting.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/call-handler/after-call.html" %}
+        </li>      
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

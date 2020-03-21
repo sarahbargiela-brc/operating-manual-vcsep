@@ -1,0 +1,61 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/personal-information">Personal information</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Forms</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Forms to collect information</h1>
+
+      <p>Form templates for non-crime emergencies.</p>
+
+      <h3 class="govuk-heading-m">Online form</h3>
+
+      <p>Always try to use the online form. Collecting information online will speed up how fast information can be used to help get people support.</p>
+
+      <p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=ujzc_l7KiEOoN7Rcfw1xt0pZ5WuNlidPpisDzCMUR9VUN1BBSjE5RkQzSE02UkRCQUcwRUpFR1VTNiQlQCN0PWcu" target="_blank">View online form</a></p>
+
+      <h3 class="govuk-heading-m">Paper form</h3>
+
+      <p>Only use the paper form if the digital one is unavailable.</p>
+
+      <p><a href="/public/images/register-needs-form.pdf" download>Download paper form</a></p>
+
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/personal-information/what-to-collect.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/personal-information/explaining-use.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/personal-information/consent.html" %}
+        </li>      
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}
