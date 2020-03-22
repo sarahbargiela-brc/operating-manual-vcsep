@@ -2,7 +2,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  NESL Operating Manual
+  Finish calls | BRC support line manual
 {% endblock %}
 
 {% block beforeContent %}
@@ -10,9 +10,6 @@
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="/">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/call-handler">Call handler</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link">How to finish calls</a>
@@ -49,17 +46,20 @@
       {% include "includes/related-content.html" %}
       <ul class="govuk-list">
         <li id="homepage-link-list">
-          {% include "nav-links/call-handler/principles.html" %}
-        </li>
+          <a href="#">How to setup your equipment</a>
+        </li> 
         <li id="homepage-link-list">
-           {% include "nav-links/call-handler/start-calls.html" %}
-        </li>
+          {% include "nav-links/principles.html" %}
+        </li> 
         <li id="homepage-link-list">
           {% include "nav-links/signposting.html" %}
-        </li>
+        </li>  
         <li id="homepage-link-list">
-          {% include "nav-links/call-handler/after-call.html" %}
-        </li>      
+          {% include "nav-links/after-call.html" %}
+        </li> 
+        <li id="homepage-link-list">
+          {% include "nav-links/personal-information/index.html" %}
+        </li>     
       </ul>
 
     </div>

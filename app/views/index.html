@@ -2,7 +2,7 @@
 {% extends "layout_homepage.html" %}
 
 {% block pageTitle %}
-  NESL Operating Manual
+  BRC support line manual
 {% endblock %}
 
 {% block content %}
@@ -13,16 +13,19 @@
       <h3 class="govuk-heading-m">Call operator guidance</h3>
       <ul class="govuk-list">
         <li id="homepage-link-list">
-          {% include "nav-links/call-handler/principles.html" %}
+          <a href="#">How to setup your equipment</a>
+        </li> 
+        <li id="homepage-link-list">
+          {% include "nav-links/principles.html" %}
         </li> 
         <li id="homepage-link-list">
           {% include "nav-links/signposting.html" %}
         </li> 
         <li id="homepage-link-list">
-          {% include "nav-links/call-handler/finish-calls.html" %}
+          {% include "nav-links/finish-calls.html" %}
         </li> 
         <li id="homepage-link-list">
-          {% include "nav-links/call-handler/after-call.html" %}
+          {% include "nav-links/after-call.html" %}
         </li> 
         <li id="homepage-link-list">
           {% include "nav-links/personal-information/index.html" %}
