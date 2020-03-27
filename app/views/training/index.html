@@ -1,0 +1,100 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Training | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Training</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Training and advice for operators</h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Introduction</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/training/code-of-practice">Code of Practice</a>
+        </li>
+        <li>
+          <a href="/training/calmer-framework">A framework for support line telephone operating</a>
+        </li>
+        <li>
+          <a href="/training/responses">How you could repond to callers</a>
+        </li>
+        <li>
+          <a href="/training/supporting-distressed-callers">Supporting distressed callers</a>
+        </li>
+        <li>
+          <a href="/training/boundaries-and-limitations">Boundaries and limitations</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Practical tips and tools</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          {% include "nav-links/principles.html" %}
+        </li>
+        <li>
+          {% include "nav-links/finish-calls.html" %}
+        </li>
+        <li>
+          {% include "nav-links/after-call.html" %}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Dealing with strong emotions</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/training/anger-and-distress">Angry and distressed callers</a>
+        </li>
+        <li>
+          <a href="/training/silent-callers">Silent callers</a>
+        </li>
+        <li>
+          <a href="/training/abusive-callers">Abusive callers</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Safeguarding</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/training/adult-abuse-indicators">Adult abuse indicators</a>
+        </li>
+        <li>
+          <a href="/training/child-and-young-person-abuse-indicators">Child and young person abuse indicators</a>
+        </li>
+        <li>
+          <a href="/training/safeguarding-procedure">Safeguarding procedure</a>
+        </li>
+        <li>
+          <a href="/training/responding-to-disclosure">How to respond to a disclosure</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

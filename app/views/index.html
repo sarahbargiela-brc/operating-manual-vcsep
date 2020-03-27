@@ -8,47 +8,55 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">Call operator guidance</h3>
-      <ul class="govuk-list">
-        <li id="homepage-link-list">
-          <a href="#">How to setup your equipment</a>
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/principles.html" %}
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/signposting.html" %}
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/finish-calls.html" %}
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/after-call.html" %}
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/personal-information/index.html" %}
-        </li>      
-      </ul>
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        {% include "nav-links/about-support-line.html" %}
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Phone number, opening times, what is the support line, what support it offers</p>
     </div>
-
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">About the support line</h3>
-      <ul class="govuk-list">
-        <li id="homepage-link-list">
-          {% include "nav-links/about-support-line.html" %}
-        </li>
-        <li id="homepage-link-list">
-          {% include "nav-links/phone-number.html" %}
-        </li>
-        <li id="homepage-link-list">
-          {% include "nav-links/advice-support-available.html" %}
-        </li>
-      </ul>
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        <a href="/training">Training and advice for operators</a>
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">How to listen and talk with callers, dealing with strong emotions, safeguarding, how to finish calls</p>
     </div>
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        <a href="#">Setting and using your equipment</a>
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Instructions for setting your equipment, answering calls, signing out after a shift</p>
+    </div>
+  </div>
 
-</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        <a href="#">Shifts and briefings</a>
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Signing up for shifts, shift times, briefings, cancelling a shift</p>
+    </div> 
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+       {% include "nav-links/signposting.html" %}
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Contact information for other services that can help people</p>
+    </div> 
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        {% include "nav-links/personal-information/index.html" %}
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Forms, what information to collect, explaining information sharing, privacy,</p>
+    </div>    
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s" id="home-nav-link">
+        <a href="#">Support for operators</a>
+      </h4>
+      <p class="govuk-body govuk-!-font-size-16">Wellbeing, debriefings, stress management, operator support line</p>
+    </div>   
+  </div>
 
  
 {% endblock %}

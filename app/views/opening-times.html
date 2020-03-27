@@ -2,7 +2,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Advice support available | BRC support line manual
+  Phone number | BRC support line manual
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,7 +12,7 @@
         <a class="govuk-breadcrumbs__link" href="/">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Advice and support available</a>
+        <a class="govuk-breadcrumbs__link">Phone number</a>
       </li>
     </ol>
   </div>
@@ -23,18 +23,15 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Advice and support available through the support line</h1>
-      
-      <p class="govuk-body">The support line offers primarily emotional support to people having to self-isolate from Coronavirus (COVID-19).</p>
+      <h1 class="govuk-heading-xl">Opening times</h1>
 
-      <p class="govuk-body">For some people calling we may need to give them other support we don't advertise, including:</p>
+      <p class="govuk-body">The support line is open:</p>
 
-      <ul class="govuk-list govuk-list--bullet">
-          <li>How to get supplies like food and medication</li>
-          <li>Information to contact other services</li>
-          <li>Support to get specialist services such as mental health, finance and supplies</li>
-          <li>Support planning your next steps</li>
-      </ul>
+      <div class="govuk-panel govuk-panel--confirmation" style="background-color: #ffffff; border: 2px solid #0b0c0c">
+        <div class="govuk-panel__body" style="color: #0b0c0c">
+          10am – 6pm<br>Seven days a week
+        </div>
+      </div>
 
       {% include "includes/related-content.html" %}
       <ul class="govuk-list">
@@ -45,7 +42,7 @@
           {% include "nav-links/phone-number.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/opening-times.html" %}
+          {% include "nav-links/advice-support-available.html" %}
         </li>
       </ul>
 
