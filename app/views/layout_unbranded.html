@@ -1,7 +1,4 @@
-{#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
-{%- set assetPath = '/govuk/assets' -%}
-
-{% extends "govuk/template.njk" %}
+{% extends "layout.html" %}
 
 {% block headIcons %}
   <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
@@ -13,7 +10,13 @@
 {% endblock %}
 
 {% block head %}
-  {% include "includes/meta-tags.html" %}
+  <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+  {% for stylesheetUrl in extensionConfig.stylesheets %}
+    <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+  {% endfor %}
+
   <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- Primary Meta Tags -->
@@ -52,8 +55,4 @@
 {% endblock %}
 {% block footer %}
 	{% include "includes/footer.html" %}
-{% endblock %}
-
-{% block bodyEnd %}
-  {% include "includes/scripts.html" %}
 {% endblock %}
