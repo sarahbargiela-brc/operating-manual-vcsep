@@ -84,6 +84,11 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: #ffffff;
 }
 
+#home-nav-link {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 #status-banner {
   background: #f3f2f1;
   padding-bottom: 10px;
@@ -173,6 +178,6 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   font-size: 24px;
 }
 
-.tags {
+.search-tags {
   display: none;
 }
