@@ -1,0 +1,44 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Equipment | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/equipment">Equipment</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">How to answer</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">How to answer calls with your phone</h1>
+
+      <p class="govuk-body">You are ready to take support line calls, once you have <a href="/equipment/setup-phone">setup your phone</a>.
+
+      <p class="govuk-body">You phone will ring as it normal does when someone calls it. Answer and hang up as you normally would with your phone.</p>
+
+      <h3 class="govuk-heading-m">Leaving your phone unattended</h3>
+
+      <p class="govuk-body">If you leave your telephone unattended for any length of time, you must <a href="/equipment/stop-calls">log out your phone</a> from the support line.</p>
+
+      <p class="govuk-body">If you forget to log out of the system and your telephone receives a call while you away, the call will transfer to the next available telephone operator and you will be automatically logged out of the system. Therefore, when you return to your desk, you will need to check if you are still logged into the support line.</p>
+
+    </div>
+</div>
+
+{% endblock %}
