@@ -1,0 +1,74 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Stress management | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/shift-briefings">Shifts and briefings</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Briefing note</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Briefing note</h1>
+
+      <h3 class="govuk-heading-m">Support line number</h3> 
+
+      <p class="govuk-body">{% include "includes/phone-number.html" %}</p> 
+
+      <h3 class="govuk-heading-m">Aim of support line</h3> 
+
+      <p class="govuk-body">Make it easier for people without a support network to talk to someone and get emotional support</p>
+
+      <h3 class="govuk-heading-m">Who for?</h3>
+
+      <p class="govuk-body">The support is for people having to self-isolate from Coronavirus (<nobr>COVID-19</nobr>):</p>
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li><a href="#">Most medically vulnerable people</a></li>
+        <li>Other people needing to fully self-isolate for the expected period of 12 weeks</li>
+      </ol>
+
+      <h3 class="govuk-heading-m">What help?</h3>
+
+      <p class="govuk-body">The support line offers primarily emotional support to people having to self-isolate from Coronavirus (<nobr>COVID-19</nobr>).</p>
+
+      <p class="govuk-body">For some people calling we may need to give them other support we don't advertise, including:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+          <li>How to get supplies like food and medication</li>
+          <li>Information to contact other services</li>
+          <li>Support to get specialist services such as mental health, finance and supplies</li>
+          <li>Support planning your next steps</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">When and how?</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Starting date: 31 March 2020</li>
+        <li>Operating hours will be 10am – 6pm, Seven days a week</li>
+        <li>A voicemail facility is available –if required, a request will be put out on</li> 
+        <li>WhatsApp asking for a volunteer to return a call</li>
+        <li>Support Line is being managed by xxxxxx and xxxxxx supported by a core teamof volunteer call takers.</li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}
