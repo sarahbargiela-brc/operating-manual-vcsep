@@ -115,6 +115,10 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   border-top: 0px;
 }
 
+#side-nav-signposting li {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 700px) {
     #hide-on-mobile {
         display: none;
