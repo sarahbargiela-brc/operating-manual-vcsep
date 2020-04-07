@@ -103,8 +103,8 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 #footer-link a:hover {
-  text-decoration: underline;
-  color: #0b0c0c;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #homepage-link-list {
@@ -113,6 +113,10 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .govuk-footer {
   border-top: 0px;
+}
+
+#side-nav-signposting li {
+  margin-bottom: 15px;
 }
 
 @media (max-width: 700px) {
