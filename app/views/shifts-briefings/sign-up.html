@@ -1,0 +1,51 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Briefing note | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/shifts-briefings">Shifts and briefings</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Sign up</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Sign up for shifts</h1>
+
+      <p class="govuk-body">When you complete training, we will contact you asking your availability to do shifts on the support line.</p> 
+
+      <p class="govuk-body">Your shift details will be sent to you by email.</p>
+
+      <h3 class="govuk-heading-m">Shift times</h3>
+
+      <p class="govuk-body">There are two shifts a day:</p>
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li>
+          10:00 to 14:00 - AM shift
+        </li>
+        <li>
+          14:00 to 18:00 - PM shift
+        </li>
+      </ol>
+
+    </div>
+</div>
+
+{% endblock %}
