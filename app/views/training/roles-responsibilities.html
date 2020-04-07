@@ -1,0 +1,76 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Roles and responsibilities | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/training">Training</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Roles and responsibilities</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Roles and responsibilities</h1>
+
+      <p class="govuk-body">There are three roles on the support line:</p>
+
+      <h3 class="govuk-heading-m">Operators</h3>
+
+      <p class="govuk-body">Operators answer calls from people who need support.</p>
+
+      <p class="govuk-body">Operators are responsible for:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Giving emotional support</li>
+        <li>{% include "nav-links/signposting.html" %}</li>
+        <li>Referring people for other support, such as food</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">Supervisors</h3>
+
+      <p class="govuk-body">Supervisors support operators on any given shift.</p>
+
+      <p class="govuk-body">Supervisors are responsible for:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Briefing operators at the start of a shift</li>
+        <li>Providing operators information throughout a shift</li>
+        <li>Giving advice when operators are unsure what do to</li>
+        <li>Listening and speaking with operators when they have a difficult call</li>
+        <li>Debriefing operators at the end of a shift</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">Managers</h3>
+
+      <p class="govuk-body">Managers organise the day-to-day set-up and running of the support line.</p>
+
+      <p class="govuk-body">Managers are responsible for:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Reports on the needs of people calling the support line</li>
+        <li>Organising briefing and debriefing operators</li>
+        <li>Information given out by operators is accurate and up-to-date</li>
+        <li>Coordinating with other parts of British Red Cross</li>
+        <li>Coordinating with other organisations</li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}
