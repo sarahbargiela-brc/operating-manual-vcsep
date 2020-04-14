@@ -1,0 +1,38 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Sign up | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/shifts-briefings">Shifts and briefings</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Intro video</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Introduction video</h1>
+
+      <p class="govuk-body">Introduction to the support line for new volunteers before they start shifts, by Rachel Kirvan from the Crisis Response Team at British Red Cross.</p> 
+
+      <iframe width="720" height="540" src="https://www.youtube.com/embed/0a7roRyRA60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</div>
+
+{% endblock %}
