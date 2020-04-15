@@ -54,16 +54,19 @@
       </ul>
 
       {% include "includes/related-content.html" %}
-      <ul class="govuk-list">
-        <li id="homepage-link-list">
+      <ul id="related-links" class="govuk-list">
+        <li>
+          <a href="/personal-information/note-taking">Note taking</a>
+        </li>
+        <li>
           {% include "nav-links/personal-information/explaining-use.html" %}
         </li>
-        <li id="homepage-link-list">
+        <li>
+          {% include "nav-links/personal-information/consent.html" %}
+        </li>
+        <li>
           {% include "nav-links/personal-information/forms.html" %}
         </li>
-        <li id="homepage-link-list">
-          {% include "nav-links/personal-information/consent.html" %}
-        </li>      
       </ul>
 
     </div>
