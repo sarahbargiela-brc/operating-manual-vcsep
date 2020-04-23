@@ -18,24 +18,24 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "node_modules/govuk-frontend/govuk/all";
 
 #brc-header {
-  background-color: #ffffff; 
-  border-bottom: solid 2px #193351; 
+  background-color: #ffffff;
+  border-bottom: solid 2px #434142;
   padding-bottom: 10px;
 }
 
 #brc-header h1 {
-  color: #0b0c0c;
+  color: #434142;
 }
 
 #header-link a {
-  text-decoration: none; 
-  color: #0b0c0c;
+  text-decoration: none;
+  color: #434142;
   font-weight: 700;
 }
 
 #header-link a:hover {
   text-decoration: underline;
-  color: #0b0c0c;
+  color: #434142;
 }
 
 #footer h4 {
@@ -47,8 +47,8 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 #phase-tag {
-  color: #ffffff; 
-  background-color: transparent; 
+  color: #ffffff;
+  background-color: transparent;
   border: solid 1px #ffffff;
 }
 
@@ -61,7 +61,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 #home-banner {
-  background-color: #d0021b; 
+  background-color: #2184c1;
   border-bottom: 0px solid #b1b4b6;
   color: #ffffff;
 }
@@ -89,7 +89,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   border: solid 0px #fff;
 }
 
-#banner-contetainer {
+#banner-container {
   border: solid 0px #fff;
   margin-bottom: 0px;
 }
@@ -130,8 +130,8 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 .copy-box {
-  background-color: #ffffff; 
-  border: 2px solid #0b0c0c; 
+  background-color: #ffffff;
+  border: 2px solid #0b0c0c;
   text-align: left;
   color: #0b0c0c;
   font-size: 27px;
