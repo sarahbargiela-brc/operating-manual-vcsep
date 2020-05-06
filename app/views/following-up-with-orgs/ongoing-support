@@ -1,0 +1,38 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Ongoing support | VCS EP manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/following-up-with-orgs">Following up with organisations</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Ongoing support</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Ongoing support</h1>
+
+      <p class="govuk-body">If the local organisation is still receiving support or requires ongoing support, the liaison lead should note in the comments section of the SharePoint entry:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>date they contacted the organisation</li>
+  <li>that the organisation still requires support</li>
+</ul>
+    </div>
+</div>
+
+{% endblock %}
