@@ -1,0 +1,1519 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Signposting | BRC support line manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Signposting to other services</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Signposting to other services</h1>
+      <div class="govuk-form-group">
+        <input class="govuk-input" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for services, organisations, categories" title="Type in a name">
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter" id="hide-on-mobile">
+      <h4 class="govuk-heading-s" style="margin-top: 10px;">Service types</h4>
+      <ul class="govuk-list" id="side-nav-signposting">
+        <li>
+          <a class="govuk-link" href="#coronavirus-specifi-support">Coronavirus support</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#other-support-lines">Other support lines</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#age-related-health">Age related health</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#mental-health-bereavement">Mental health and bereavement</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#physical-health-disability">Physical health and disability</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#safeguarding">Safeguarding</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#government-agencies">Government agencies</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#financial-help">Financial help</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#british-red-cross">British Red Cross</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#children-young-people">Children and young people</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#missing-persons-tracing">Missing persons and tracing</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#loneliness-isolation">Loneliness and Isolation</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#homelessness">Homelessness</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <table id="myTable" class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Service</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">What it does</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Contact</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Region</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+
+          <!-- SECTION - Coronavirus specific support -->
+          <div>
+            <tr class="govuk-table__row" id="coronavirus-specifi-support">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Coronavirus support
+              </td>
+            </tr>
+            <!-- NHS 111 sympton checker -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Community Hubs, local council
+                <span class="search-tags">food, medication, self-isolating, council, community hubs</span>
+              </td>
+              <td class="govuk-table__cell">Food, medication and other support coordinated by local councils. Search by postcode.</td>
+              <td class="govuk-table__cell"><a href="https://www.theyhelpyou.co.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- NHS 111 sympton checker -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NHS 111 Covid-19
+                <span class="search-tags">health, coronavirus, covid</span>
+              </td>
+              <td class="govuk-table__cell">Check symptoms for Coronavirus (<nobr>Covid-19</nobr>)</td>
+              <td class="govuk-table__cell"><a href="https://111.nhs.uk/covid-19">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Breathing Space -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Breathing Space
+                <span class="search-tags">support line, coronavirus</span>
+              </td>
+              <td class="govuk-table__cell">Non-emergency helpline offering empathy, understanding and advice through active listening</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 83 85 87</nobr><br>
+                <a href="https://www.breathingspace.scot/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Humanity First -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Humanity First
+                <span class="search-tags">support line, cornoavirus, covid</span>
+              </td>
+              <td class="govuk-table__cell">Non-emergency helpline offering support and further signposting</td>
+              <td class="govuk-table__cell">
+                <nobr>0333 880 6619</nobr><br>
+                <a href="https://hfuk.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK Wide</td>
+            </tr>
+            <!-- Local Resilience Forums -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Local Resilience Forums
+                <span class="search-tags">health, coronavirus, covid, food, medicine, pharmaceuticals</span>
+              </td>
+              <td class="govuk-table__cell">Multi-agency emergency planning and co-ordinating response in England and Wales, for referrals such as food and medicine</td>
+              <td class="govuk-table__cell"><a href="https://www.gov.uk/guidance/local-resilience-forums-contact-details">Website</a>
+              </td>
+              <td class="govuk-table__cell">England and Wales</td>
+            </tr>
+            <!-- Regional Resilience Partnerships -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Regional Resilience Partnerships
+                <span class="search-tags">health, coronavirus, covid</span>
+              </td>
+              <td class="govuk-table__cell">Multi-agency emergency planning and co-ordinating response in Scotland, for referrals such as food and medicine</td>
+              <td class="govuk-table__cell"><a href="https://www.readyscotland.org/coronavirus/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Emergency Preparedness Groups -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Emergency Preparedness Groups
+                <span class="search-tags">health, coronavirus, covid</span>
+              </td>
+              <td class="govuk-table__cell">Multi-agency emergency planning and co-ordinating response in North Ireland, for referrals such as food and medicine</td>
+              <td class="govuk-table__cell"><a href="https://www.nidirect.gov.uk/campaigns/coronavirus-covid-19">Website</a>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+          </div>
+		
+          <!-- SECTION - support lines -->
+          <div>
+            <tr class="govuk-table__row" id="other-support-lines">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Other support lines
+              </td>
+            </tr>
+            <!-- NHS website -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NHS website
+                <span class="search-tags">health, support line</span>
+              </td>
+              <td class="govuk-table__cell">NHS advice for Coronavirus</td>
+              <td class="govuk-table__cell"><nobr>111</nobr><br>
+              <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Website</a>
+              </td>
+              <td class="govuk-table__cell">England, Scotland and Wales</td>
+            </tr>
+            <!-- NHS 111 -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NHS 111
+                <span class="search-tags">health, support line</span>
+              </td>
+              <td class="govuk-table__cell">Non-emergency NHS helpline offering access to local services both in and out of hours</td>
+              <td class="govuk-table__cell"><nobr>111</nobr><br>
+              <a href="https://www.nhs.uk/using-the-nhs/nhs-services/urgent-and-emergency-care/nhs-111/">Website</a>
+              </td>
+              <td class="govuk-table__cell">England, Scotland and Wales</td>
+            </tr>
+            <!-- Samaritans -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Samaritans
+                <span class="search-tags">support line, suicide, mental health</span>
+              </td>
+              <td class="govuk-table__cell">24 hour helpline for those in crisis. UK Wide</td>
+              <td class="govuk-table__cell"><nobr>116 123</nobr><br>
+              <a href="http://www.samaritans.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK and Ireland</td>
+            </tr>
+            <!-- Family Lives (formerly ParentLine) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Family Lives (formerly ParentLine)</nobr>
+                <span class="search-tags">support line, children</span>
+              </td>
+              <td class="govuk-table__cell">Helpline for any aspects of family life and parenting, including bullying. UK wide </td>
+              <td class="govuk-table__cell"><nobr>0808 800 2222</nobr><br>
+              <a href="http://www.familylives.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- NAPAC -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NAPAC
+                <span class="search-tags">support line, children, safeguarding, abuse</span>
+              </td>
+              <td class="govuk-table__cell">Support for adults dealing with the impact of childhood abuse</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 801 0331</nobr><br>
+                <a href="https://napac.org.uk/">Website</a><br>
+		<nobr>support@napac.org.uk</nobr>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Winston’s Wish -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Winston’s Wish
+                <span class="search-tags">support line, children, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Support line for bereaved children and their families</td>
+              <td class="govuk-table__cell">
+                <nobr>08088 020 021</nobr><br>(calls cost 2p per minute)<br>
+                <a href="http://www.winstonswish.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Forces Line -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Forces Line 
+                <span class="search-tags">support line</span>
+              </td>
+              <td class="govuk-table__cell">Support line for active and veteran soldiers, airmen, sailors, and their families</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 731 4880</nobr><br>
+                <a href="https://www.ssafa.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Rape Crisis (England and Wales) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Rape Crisis<br>(England and Wales)
+                <span class="search-tags">support line, sexual assault</span>
+              </td>
+              <td class="govuk-table__cell">Support line for abuse and sexual violence</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 802 9999</nobr><br>
+                <a href="https://rapecrisis.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">England and Wales</td>
+            </tr>
+            <!-- Rape Crisis (Ireland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Rape Crisis<br>(Ireland)
+                <span class="search-tags">support line, sexual assault</span>
+              </td>
+              <td class="govuk-table__cell">Support line for abuse and sexual violence</td>
+              <td class="govuk-table__cell">
+                <nobr>1800 778 888</nobr><br>
+                <a href="http://www.rapecrisishelp.ie/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Ireland</td>
+            </tr>
+            <!-- Rape Crisis (Scotland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Rape Crisis<br>(Scotland)
+                <span class="search-tags">support line, sexual assault</span>
+              </td>
+              <td class="govuk-table__cell">Support line for abuse and sexual violence</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 801 0302</nobr><br>
+                <a href="http://www.rapecrisisscotland.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Victim Support (England and Wales) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Victim Support<br>(England and Wales)
+                <span class="search-tags">support line, crime</span>
+              </td>
+              <td class="govuk-table__cell">Support line for offering information and support for victims of crime</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 1689 111</nobr><br>
+                <a href="https://www.victimsupport.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">England and Wales</td>
+            </tr>
+            <!-- Victim Support (Northern Ireland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Victim Support<br>(Northern Ireland)
+                <span class="search-tags">support line, crime</span>
+              </td>
+              <td class="govuk-table__cell">Support line for offering information and support for victims of crime</td>
+              <td class="govuk-table__cell">
+                <nobr>028 9024 3133</nobr><br>
+                <a href="http://www.victimsupportni.co.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- Victim Support (Scotland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Victim Support<br>(Scotland)
+                <span class="search-tags">support line, crime</span>
+              </td>
+              <td class="govuk-table__cell">Support line for offering information and support for victims of crime</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 160 1985</nobr><br>
+                <a href="http://www.victimsupportsco.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Women’s Aid -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Women’s Aid
+                <span class="search-tags">support line, abuse, sex</span>
+              </td>
+              <td class="govuk-table__cell">Support line for women affected by domestic abuse</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 200 0247</nobr><br>
+                <a href="https://www.womensaid.org.uk/">Website</a><br>
+                helpline@womensaid.org.uk<br>
+		            <a href="https://chat.womensaid.org.uk/">Chat online</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Women’s Aid (Northern Ireland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Women’s Aid<br>(Northern Ireland)
+                <span class="search-tags">support line, abuse, sex</span>
+              </td>
+              <td class="govuk-table__cell">Support line for women affected by domestic abuse</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 802 1414</nobr><br>
+                Text 'support' to <nobr>07797 80583</nobr><br>
+                <a href="http://www.womensaidni.org/">Website</a><br>
+                24hoursupport@dvhelpline.org
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            
+            <!-- Lifeline Northern Ireland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Lifeline Northern Ireland
+                <span class="search-tags">support line, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Support line for those experiencing distress or despair</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 808 8000</nobr><br>
+                <a href="http://www.lifelinehelpline.info/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- Community Advice and Listening Line -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Community Advice and Listening Line
+                <span class="search-tags">support line, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Support line for information and emotional support on mental health</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 132 737</nobr><br>
+                Text 'help' to <nobr>81066</nobr><br>
+                <a href="http://www.callhelpline.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Wales</td>
+            </tr>
+          </div>
+          <!-- SECTION - Age related health -->
+          <div>
+            <tr class="govuk-table__row" id="age-related-health">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Age related health
+              </td>
+            </tr>
+            <!-- First Stop Care Advice -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">First Stop Care Advice
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Directory of care services for the elderly, their families and carers. </td>
+              <td class="govuk-table__cell">
+                <nobr>0800 377 7070</nobr><br>
+                Mobile and overseas: <nobr><br>020 3519 6002</nobr><br>
+                <a href="http://www.firststopcareadvice.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Action on Hearing Loss -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Action on Hearing Loss
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Information and support for those affected by hearing loss</td>
+              <td class="govuk-table__cell">
+                Call: <nobr>0800 808 0123</nobr><br>
+                Textphone: <nobr>0808 808 9000</nobr><br>
+                Text: <nobr>07800 000360</nobr><br>
+                <a href="http://www.actiononhearingloss.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Action on Hearing Loss -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Action for Elder Abuse
+                <span class="search-tags">health, age, abuse</span>
+              </td>
+              <td class="govuk-table__cell">Support to protect vulnerable older adults who are at risk of various forms of abuse</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 808 8141 </nobr><br>
+                <a href="http://elderabuse.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Age UK -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Age UK
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Services for people over 50</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 055 6112</nobr><br>
+                <a href="http://www.ageuk.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Age NI -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Age NI
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Services for people over 50</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 808 7575</nobr><br>
+                <a href="http://www.ageuk.org.uk/northern-ireland/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- Age Scotland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Age Scotland
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Services for people over 50</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 12 44 222</nobr><br>
+                <a href="http://www.ageuk.org.uk/scotland/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Alzheimer’s Society -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Alzheimer’s Society
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by alzheimer’s and dementia</td>
+              <td class="govuk-table__cell">
+                <nobr>0333 150 3456</nobr><br>
+                <a href="https://www.alzheimers.org.uk/">Website</a><br>
+                Enquiries@alzheimers.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Alzheimer Scotland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Alzheimer Scotland
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">Specialist services for those with alzheimer’s and dementia, as well as for carers</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 808 3000</nobr><br>
+                <a href="http://www.alzscot.org/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- The Alzheimer Society of Ireland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The Alzheimer Society of Ireland
+                <span class="search-tags">health, age</span>
+              </td>
+              <td class="govuk-table__cell">provides dementia specific services across Ireland</td>
+              <td class="govuk-table__cell">
+                <nobr>1 800 341 341</nobr><br>
+                <a href="http://www.alzheimer.ie/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Ireland</td>
+            </tr>
+          </div>
+          <!-- SECTION - Mental health and bereavement -->
+          <div>
+            <tr class="govuk-table__row" id="mental-health-bereavement">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Mental health and bereavement
+              </td>
+            </tr>
+            <!-- Mind -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Mind
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Advice and support for people experiencing a mental health problem</td>
+              <td class="govuk-table__cell">
+                <nobr>0300 123 3393</nobr><br>
+                <a href="http://www.mind.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- We Are With You -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">We Are With You
+                <span class="search-tags">health, mental health, addiction, drugs, alcohol</span>
+              </td>
+              <td class="govuk-table__cell">Get free, confidential support with alcohol, drugs or mental health</td>
+              <td class="govuk-table__cell">
+                <a href="https://www.wearewithyou.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- YoungMinds -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">YoungMinds
+                <span class="search-tags">health, mental health, children</span>
+              </td>
+              <td class="govuk-table__cell">Support for young people experiencing a mental health problem</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 802 5544</nobr><br>
+                <a href="http://www.youngminds.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- NI Association on Mental Health  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NI Association on Mental Health 
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Advice and support for people experiencing a mental health problemd</td>
+              <td class="govuk-table__cell">
+                <nobr>028 9032 8474</nobr><br>
+                <a href="http://www.niamhwellbeing.org/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- Sane  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Sane 
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Emotional support and practical advice for anyone experiencing a mental health problem</td>
+              <td class="govuk-table__cell">
+                <nobr>0300 304 7000</nobr><br>
+                <a href="http://www.sane.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Anxiety UK -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Anxiety UK 
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Support and information for anyone with an anxiety disorder</td>
+              <td class="govuk-table__cell">
+                <nobr>03444 775 774</nobr><br>
+                <a href="https://www.anxietyuk.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- OCD-UK -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">OCD-UK 
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by Obsessive Compulsive Disorder and related conditions</td>
+              <td class="govuk-table__cell">
+                <nobr>03332 127 890</nobr> or <br><nobr>03332 120 703</nobr><br>
+                <a href="http://www.ocduk.org/">Website</a><br>
+                support@ocduk.org
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Help for Hoarders -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Help for Hoarders 
+                <span class="search-tags">health, mental health</span>
+              </td>
+              <td class="govuk-table__cell">Support and advice for hoarders</td>
+              <td class="govuk-table__cell">
+                <a href="https://www.helpforhoarders.co.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- The Compassionate Friends -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The Compassionate Friends
+                <span class="search-tags">support line, children, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Support line for families who have suffered the death of a child</td>
+              <td class="govuk-table__cell">
+                <nobr>0845 123 2304</nobr><br>
+                Northern Ireland:<br><nobr>0345 123 2304 </nobr><br>
+                <a href="http://www.tcf.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Cruse Bereavement Care -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Cruse Bereavement Care
+                <span class="search-tags">bereavement, support line, death</span>
+              </td>
+              <td class="govuk-table__cell">bereavement support</td>
+              <td class="govuk-table__cell"><nobr>0808 808 1677</nobr><br>
+              <a href="http://www.cruse.org.uk/home">Website</a><br>
+              info@cruse.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Road Peace -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Road Peace
+                <span class="search-tags">support line, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Support line for people who have been injured and/or bereaved from a crash</td>
+              <td class="govuk-table__cell">
+                <nobr>0845 450 0355</nobr><br>
+                <a href="http://www.roadpeace.org/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Sands -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">
+                Sands
+                <span class="search-tags">support line, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Still birth and neonatal death charity which provides support for bereaved parents and their families</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 164 3332</nobr><br>
+                <a href="https://www.uk-sands.org/">Website</a><br>
+                helpline@sands.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- The National Association of Widows -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The National Association of Widows
+                <span class="search-tags">support line, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Support line for men and women who have lost their partners.</td>
+              <td class="govuk-table__cell">
+                <nobr>0845 838 2261</nobr><br>
+                <a href="http://www.nawidows.org.uk">Website</a><br>
+                info@nawidows.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Physical health and disability -->
+          <div>
+            <tr class="govuk-table__row" id="physical-health-disability">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Physical health and disability
+              </td>
+            </tr>
+            <!-- MacMillan -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">MacMillan
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">Advice and support for people affected by cancer</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 808 0000</nobr><br>
+                <a href="http://www.macmillan.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Marie Curie -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Marie Curie
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">End of life care to terminally ill cancer patients either in their homes or in one of nine hospices</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 090 2309</nobr><br>
+                Professional referrals:<br><nobr>0845 056 7899</nobr><br>
+                <a href="https://www.mariecurie.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Marie Curie Northern Ireland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Marie Curie Northern Ireland
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">End of life care to terminally ill cancer patients either in their homes or in one of nine hospices</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 716 146</nobr><br>
+                <a href="https://www.mariecurie.org.uk/who/what-we-do/marie-curie-northern-ireland">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- CLIC Sargent -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">CLIC Sargent
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">Support for children and young people with cancer, as well as parents and professionals</td>
+              <td class="govuk-table__cell">
+                <nobr>0300 330 0803</nobr><br>
+                <a href="http://www.clicsargent.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Maggie’s Centres -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Maggie’s Centres
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by cancer</td>
+              <td class="govuk-table__cell">
+		            <nobr>0300 123 1801</nobr><br>
+                <a href="https://www.maggiescentres.org/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- CLIC Sargent -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">CLIC Sargent
+                <span class="search-tags">health, cancer</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by Multiple Sclerosis </td>
+              <td class="govuk-table__cell">
+                <nobr>0808 800 8000</nobr><br>
+                <a href="https://www.mssociety.org.uk/">Website</a><br>
+                helpline@mssociety.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Royal National Institute for the Blind -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Royal National Institute for the Blind 
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Information and support for anyone affected by sight loss</td>
+              <td class="govuk-table__cell">
+                <nobr>0303 123 9999</nobr><br>
+                <a href="http://www.rnib.org.uk/">Website</a><br>
+                helpline@rnib.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+           
+            <!-- Scope -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Scope
+                <span class="search-tags">health, disability</span>
+              </td>
+              <td class="govuk-table__cell">Support, information and advice to people with disabilities and their families</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 800 3333</nobr><br>
+                <a href="http://www.scope.org.uk/">Website</a><br>
+                helpline@scope.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Family fund -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Family Fund
+                <span class="search-tags">health, disability, money, finance</span>
+              </td>
+              <td class="govuk-table__cell">Money grants to low-income families with disabled or seriously ill children and young people under 17</td>
+              <td class="govuk-table__cell">
+                <nobr>01904 550055</nobr><br>
+                <a href="http://www.familyfund.org.uk/">Website</a><br>
+                info@familyfund.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Diabetes UK -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Diabetes UK
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Information and support for anyone affectedn by diabetes</td>
+              <td class="govuk-table__cell">
+                <nobr>0345 123 2399</nobr><br>
+                <a href="https://www.diabetes.org.uk/">Website</a><br>
+                careline@diabetes.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Bladder and Bowel Foundation -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Bladder and Bowel Foundation
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Support for people with bladder and bowel control problems</td>
+              <td class="govuk-table__cell">
+                <nobr>0845 345 0165</nobr><br>
+                <a href="https://www.bladderandbowelfoundation.org/">Website</a><br>
+                help@bladderandbowelfoundation.org
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Stroke Association -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Stroke Association
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by strokes, including cash grants</td>
+              <td class="govuk-table__cell">
+                <nobr>0303 3033 100</nobr><br>
+                <a href="https://www.stroke.org.uk/">Website</a><br>
+                info@bladderandbowelfoundation.org
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Chest Heart & Stroke Scotland -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Chest Heart & Stroke Scotland
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Advice and support for people affected by chest pains, heart attacks and strokes</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 801 0899</nobr><br>
+                <a href="http://www.chss.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- Headway -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Headway
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Support for people affected by brain injuries</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 800 2244</nobr><br>
+                <a href="https://www.headway.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Changing Faces -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Changing Faces
+                <span class="search-tags">health</span>
+              </td>
+              <td class="govuk-table__cell">Support for people supports with conditions or injuries which affect their appearance</td>
+              <td class="govuk-table__cell">
+                <nobr>0300 012 0275</nobr><br>
+                <a href="https://www.changingfaces.org.uk/">Website</a><br>
+                support@changingfaces.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Safeguarding -->
+          <div>
+            <tr class="govuk-table__row" id="safeguarding">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Safeguarding
+              </td>
+            </tr>
+            <!-- NSPCC -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NSPCC
+                <span class="search-tags">safeguarding, children, abuse</span>
+              </td>
+              <td class="govuk-table__cell">Child safeguarding</td>
+              <td class="govuk-table__cell"><nobr>0808 800 5000</nobr><br>
+              <a href="https://www.nspcc.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Local authority's child social services -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Local authority's child social services
+                <span class="search-tags">safeguarding, children, abuse</span>
+              </td>
+              <td class="govuk-table__cell">Child safeguarding</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.gov.uk/find-local-council">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Local Authority adult safeguarding -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Local Authority adult safeguarding
+                <span class="search-tags">safeguarding, children, abuse</span>
+              </td>
+              <td class="govuk-table__cell">Vulnerable adult safeguarding</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.nhs.uk/service-search/other-services/Local%20Authority%20Adult%20%20Social%20Care/LocationSearch/1918">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Government agencies -->
+          <div>
+            <tr class="govuk-table__row" id="government-agencies">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Government agencies
+              </td>
+            </tr>
+            <!-- HMRC -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">HMRC
+                <span class="search-tags">Government</span>
+              </td>
+              <td class="govuk-table__cell">Tax department, giving information and advice about paying tax</td>
+              <td class="govuk-table__cell"><nobr>0300 200 3300</nobr><br>
+              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/services-information">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Home Office -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Home Office
+                <span class="search-tags">Government</span>
+              </td>
+              <td class="govuk-table__cell">Governmental department for immigration and passports, drugs policy, crime, counter-terrorism and the police</td>
+              <td class="govuk-table__cell"><nobr>020 7035 4848</nobr><br>
+              <a href="https://www.gov.uk/government/organisations/home-office">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Foreign & Commonwealth Office -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Foreign & Commonwealth Office
+                <span class="search-tags">Government</span>
+              </td>
+              <td class="govuk-table__cell">Advice to British nationals travelling or living abroad, including repatriation and captivity</td>
+              <td class="govuk-table__cell"><nobr>020 7008 1500</nobr><br>
+              <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-office">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- National Blood Service -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">National Blood Service
+                <span class="search-tags">Government, health</span>
+              </td>
+              <td class="govuk-table__cell">Information on how you donate blood to the National Blood Service</td>
+              <td class="govuk-table__cell"><nobr>0300 123 23 23</nobr><br>
+              <a href="http://www.blood.co.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Blood Transfusion Service                
+                <span class="search-tags">Government, health</span>
+              </td>
+              <td class="govuk-table__cell">Information on how you donate blood in Nortern Ireland</td>
+              <td class="govuk-table__cell"><nobr>08085 534 666</nobr><br>
+		          <nobr>Text 'BLOOD' to 60081</nobr><br>
+              <a href="http://www.nibts.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">National Blood Transfusion Service 
+                <span class="search-tags">Government, health</span>
+              </td>
+              <td class="govuk-table__cell">Information on how you donate blood in Scotland</td>
+              <td class="govuk-table__cell"><nobr>0345 90 90 999</nobr><br>
+              <a href="https://www.scotblood.co.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+          </div>
+          <!-- SECTION - Financial help -->
+          <div>
+            <tr class="govuk-table__row" id="financial-help">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Financial help
+              </td>
+            </tr>
+            <!-- Turn 2 Us -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Turn 2 Us
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Support for people in financial need to access welfare benefits, charitable grants and other financial help</td>
+              <td class="govuk-table__cell"><nobr>0808 802 2000</nobr><br>
+              <a href="https://www.turn2us.org.uk/">Website</a><br>
+              info@turn2us.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Advice NI -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Advice NI
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Advice about benefits and money</td>
+              <td class="govuk-table__cell"><nobr>028 9064 5919</nobr><br>
+              <a href="http://www.adviceni.net/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- Citizens Advice -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Citizens Advice
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Advice on finances, consumer rights, housing and benefits</td>
+              <td class="govuk-table__cell">
+                Wales: <nobr>03444 77 20 20</nobr><br>
+                England: <nobr>03444 111 444</nobr><br>
+                Scotland: <nobr>0808 800 9060</nobr><br>
+              <a href="https://www.citizensadvice.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Wales, Scotland and England</td>
+            </tr>
+            <!-- The Edward Gosling Foundation -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The ACT Foundation
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Grants for people with mental and physical disabilities</td>
+              <td class="govuk-table__cell"><nobr>01753 753900</nobr><br>
+              <a href="http://www.theedwardgoslingfoundation.org.uk">Website</a><br>
+              info@theedwardgosling.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Al-Mizan Charitable Trust -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Al-Mizan Charitable Trust
+                <span class="search-tags">money, finance, debt</span>
+              </td>
+              <td class="govuk-table__cell">Grants for people from deprived backgrounds and communities</td>
+              <td class="govuk-table__cell">
+              <a href="http://www.almizantrust.org.uk">Website</a><br>
+              info@almizantrust.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Independence at Home -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Independence at Home
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Grants for people with a physical or learning disability, long term illness</td>
+              <td class="govuk-table__cell"><nobr>020 8427 7929</nobr><br>
+              <a href="https://www.independenceathome.org.uk">Website</a><br>
+              iah@independenceathome.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Stepchange -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Stepchange
+                <span class="search-tags">money, finance, debt, insurance</span>
+              </td>
+              <td class="govuk-table__cell">Support and advice on managing debt</td>
+              <td class="govuk-table__cell"><nobr>0800 138 1111</nobr><br>
+              <a href="http://www.stepchange.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Go Fund Me -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Go Fund Me
+                <span class="search-tags">money, finance, fundraising</span>
+              </td>
+              <td class="govuk-table__cell">Personal online fundraising websites for individuals, groups and organisations</td>
+              <td class="govuk-table__cell">
+                <a href="www.gofundme.com">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK and worldwide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Red Cross -->
+          <div>
+            <tr class="govuk-table__row" id="british-red-cross">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>British Red Cross
+              </td>
+            </tr>
+            <!-- Donate to British Red Cross -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Donate to British Red Cross
+                <span class="search-tags">Red Cross, BRC, fundraising, donations</span>
+              </td>
+              <td class="govuk-table__cell">Give money to British Red Cross for general work or specific causes</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-involved/donate?Single=1">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Volunteer with British Red Cross -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Volunteer with British Red Cross
+                <span class="search-tags">Red Cross, BRC, volunteer</span>
+              </td>
+              <td class="govuk-table__cell">Opportunities to volunteer with BRC including emergency response, refugee support and independent living</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-involved/volunteer">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Raise money for British Red Cross -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Raise money for British Red Cross
+                <span class="search-tags">Red Cross, BRC, volunteer, fundraising</span>
+              </td>
+              <td class="govuk-table__cell">Fundraising materials and support to raise money on behalf of British Red Cross</td>
+              <td class="govuk-table__cell">
+              <nobr>0300 456 1005</nobr><br>
+              <a href="https://www.redcross.org.uk/get-involved/fundraising-and-events/run-your-own-fundraising-event">Website</a><br>
+              getfundraising@redcross.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Charity shops, British Red Cross -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Charity shops, British Red Cross
+                <span class="search-tags">British Red Cross, BRC, volunteer, fundraising</span>
+              </td>
+              <td class="govuk-table__cell">Find nearest charity shop</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/shop/find-a-charity-shop">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- local family tracing -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Local Family Tracing, British Red Cross
+                <span class="search-tags">British Red Cross, BRC, family, tracing, children, missing people</span>
+              </td>
+              <td class="govuk-table__cell">Find your local missing family service</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-help/find-missing-family/find-your-local-missing-family-service">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- International Family Tracing -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">International Family Tracing, British Red Cross
+                <span class="search-tags">British Red Cross, BRC, family, tracing, refugees, asylum, missing people</span>
+              </td>
+              <td class="govuk-table__cell">Help finding family separated due to national emergencies, war, natural disaster or migration.</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-help/find-missing-family">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr> 
+            <!-- Refugee support -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Refugee Support, British Red Cross
+                <span class="search-tags">British Red Cross, BRC, family, tracing, refugees, asylum</span>
+              </td>
+              <td class="govuk-table__cell">Find information on Refugee support</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-help/get-help-as-a-refugee">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr> 
+            <!-- Service information at British Red Cross  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Service information at British Red Cross 
+                <span class="search-tags">British Red Cross, BRC</span>
+              </td>
+              <td class="govuk-table__cell">Find information on different British Red Cross services</td>
+              <td class="govuk-table__cell">
+              <a href="https://www.redcross.org.uk/get-help">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+
+          <!-- SECTION - Children and young people -->
+          <div>
+            <tr class="govuk-table__row" id="children-young-people">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Children and young people
+              </td>
+            </tr>
+            <!-- Chilren 1st  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Chilren 1st
+                <span class="search-tags">support line, children, safeguarding</span>
+              </td>
+              <td class="govuk-table__cell">Welfare of children in Scotland, with a free confidential 24 hour advice line</td>
+              <td class="govuk-table__cell"><nobr>0800 028 2233</nobr><br>
+              <a href="http://www.children1st.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Scotland</td>
+            </tr>
+            <!-- NSPCC  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">NSPCC
+                <span class="search-tags">support line, children, safeguarding</span>
+              </td>
+              <td class="govuk-table__cell">Support line for children and young people affected by abuse</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 1111</nobr><br>
+                <a href="https://www.nspcc.org.uk/">Website</a><br>
+                help@nspcc.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- ChildLine  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">ChildLine
+                <span class="search-tags">support line, children, safeguarding</span>
+              </td>
+              <td class="govuk-table__cell">Free 24 hour confidential helpline for children suffering from abuse and neglect, as well as other problems.</td>
+              <td class="govuk-table__cell">
+                <nobr>0800 1111</nobr><br>
+                <a href="http://www.childline.org.uk/">Website</a><br>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- UKYouth  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">UKYouth
+                <span class="search-tags">children, young people</span>
+              </td>
+              <td class="govuk-table__cell">Youth clubs and organisations for people aged between 9 and 25</td>
+              <td class="govuk-table__cell">
+                <nobr>0203 1373 810</nobr><br>
+                <a href="http://www.ukyouth.org/">Website</a><br>
+                info@ukyouth.org
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Centrepoint  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Centrepoint
+                <span class="search-tags">children, young people, homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support for young people affected by homelessness</td>
+              <td class="govuk-table__cell">
+                <nobr>0808 800 0661</nobr><br>
+                <a href="http://www.centrepoint.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">London and North East England</td>
+            </tr>
+            <!-- Child Bereavement UK  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Child Bereavement UK
+                <span class="search-tags">children, young people, bereavement, death</span>
+              </td>
+              <td class="govuk-table__cell">Support for young people affected by homelessness</td>
+              <td class="govuk-table__cell">
+                <nobr>08000 288 840</nobr><br>
+                <a href="http://www.childbereavementuk.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Missing persons and tracing services -->
+          <div>
+            <tr class="govuk-table__row" id="missing-persons-tracing">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Missing persons and tracing services
+              </td>
+            </tr>
+            <!-- Missing People  -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Missing People
+                <span class="search-tags">missing people</span>
+              </td>
+              <td class="govuk-table__cell">Charity that works with young runaways, missing and unidentified people, and their families</td>
+              <td class="govuk-table__cell"><nobr>116 000</nobr><br>
+              <a href="https://www.missingpeople.org.uk/">Website</a><br>
+              116000@missingpeople.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Family Tracing Service, Salvation Army -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Family Tracing Service, Salvation Army
+                <span class="search-tags">missing people</span>
+              </td>
+              <td class="govuk-table__cell">Working with family members who have lost contact with each other</td>
+              <td class="govuk-table__cell"><nobr>0845 634 4747</nobr><br>
+		<nobr>family.tracing@salvationarmy.org.uk</nobr>
+              <a href="https://www.salvationarmy.org.uk/family-tracing">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- International Social Service -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">International Social Services 
+                <span class="search-tags">missing people, tracing</span>
+              </td>
+              <td class="govuk-table__cell">Tracing birth parents in the case of adoption or children in the case of separation or divorce.</td>
+              <td class="govuk-table__cell"><nobr>0207 735 8941</nobr><br>
+              <a href="http://www.iss-ssi.org/">Website</a><br>
+              info@cfab.org.uk
+              </td>
+              <td class="govuk-table__cell">UK and worldwide</td>
+            </tr>
+            <!-- ReUnite International -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">ReUnite International 
+                <span class="search-tags">missing people, tracing</span>
+              </td>
+              <td class="govuk-table__cell">Charity specialising in child abduction and the movement of children across international borders. </td>
+              <td class="govuk-table__cell"><nobr>0116 2556 234</nobr><br>
+              <a href="http://www.reunite.org/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK and worldwide</td>
+            </tr>
+            <!-- Children and Families Acros -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Children and Families Across Borders 
+                <span class="search-tags">missing people, tracing, trafficking</span>
+              </td>
+              <td class="govuk-table__cell">Carity that identifies and protects children that have been separated from family members as a consequence of trafficking, abduction, migration, divorce, conflict and asylum</td>
+              <td class="govuk-table__cell"><nobr>020 7735 8941</nobr><br>
+              <a href="http://cfab.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Child Migrant Trust -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Child Migrant Trust 
+                <span class="search-tags">missing people, tracing, trafficking</span>
+              </td>
+              <td class="govuk-table__cell">Support for former child migrants to search for their families and gain information about their childhood</td>
+              <td class="govuk-table__cell"><nobr>0115 982 2811</nobr><br>
+              <a href="https://www.childmigrantstrust.com/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide and Australia</td>
+            </tr>
+          </div>
+          <!-- SECTION - Loneliness and Isolation -->
+          <div>
+            <tr class="govuk-table__row" id="loneliness-isolation">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Loneliness and Isolation
+              </td>
+            </tr>
+            <!-- Re-engage (formerly Contact Elderly) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Re-engage (formerly Contact Elderly)
+                <span class="search-tags">missing people</span>
+              </td>
+              <td class="govuk-table__cell">Bring older people into groups to tackle social isolation</td>
+              <td class="govuk-table__cell"><nobr>0800 716543</nobr><br>
+              <a href="https://www.reengage.org.uk/">Website</a><br>
+              info@reengage.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- The Silver Line -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The Silver Line
+                <span class="search-tags">support line, loneliness</span>
+              </td>
+              <td class="govuk-table__cell">Free 24 hour confidential helpline for people over 50</td>
+              <td class="govuk-table__cell"><nobr>0800 470 8090</nobr><br>
+              <a href="http://www.thesilverline.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- The Salvation Army -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The Salvation Army
+                <span class="search-tags">support line</span>
+              </td>
+              <td class="govuk-table__cell">Local social clubs and activities to support those who are lonely or isolated</td>
+              <td class="govuk-table__cell"><nobr>020 7367 4500</nobr><br>
+              <a href="https://www.salvationarmy.org.uk/drop-ins-lunch-clubs">Website</a><br>
+              info@salvationarmy.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Golden Oldies -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Golden Oldies
+                <span class="search-tags">isolation, loneliness</span>
+              </td>
+              <td class="govuk-table__cell">Singing and activity sessions</td>
+              <td class="govuk-table__cell">Wales: <nobr>07796 714816</nobr><br>
+              South West: <nobr>01761 470006</nobr><br>
+              <a href="http://www.golden-oldies.org.uk/">Website</a><br>
+              info@salvationarmy.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+          </div>
+          <!-- SECTION - Homelessness -->
+          <div>
+            <tr class="govuk-table__row" id="homelessness">
+              <td colspan="4" scope="row" class="govuk-table__header" style="font-size: 24px;"><br>Homelessness
+              </td>
+            </tr>
+            <!-- Crisis -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Crisis
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support for homeless people</td>
+              <td class="govuk-table__cell"><nobr>0300 636 1967</nobr><br>
+              <a href="http://www.crisis.org.uk/">Website</a><br>
+              enquiries@crisis.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Shelter -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Shelter
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support and advice to anyone facing homelessness or needing advice on housing issues</td>
+              <td class="govuk-table__cell"><nobr>0808 800 4444</nobr><br>
+              <a href="https://www.shelter.org.uk/">Website</a><br>
+              info@shelter.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Emmaus -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Emmaus
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support for people who have experienced homelessness</td>
+              <td class="govuk-table__cell"><nobr>0300 303 7555</nobr><br>
+              <a href="http://www.emmaus.org.uk/">Website</a><br>
+              contact@emmaus.org.uk
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- Street Link -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Street Link
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Connects homeless people with local support services</td>
+              <td class="govuk-table__cell"><nobr>0300 500 0914</nobr><br>
+              <a href="www.streetlink.org.uk">Website</a><br>
+           
+              </td>
+              <td class="govuk-table__cell">UK wide</td>
+            </tr>
+            <!-- The Connection -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">The Connection
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support for homeless people in London</td>
+              <td class="govuk-table__cell"><nobr>020 7766 5544</nobr><br>
+              <a href="https://www.connection-at-stmartins.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">London</td>
+            </tr>
+            <!-- Simon Community (London) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Simon Community<br>(London)
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Emergency accommodation, advice and community support for people who are homeless</td>
+              <td class="govuk-table__cell"><nobr>0207 485 6639</nobr><br>
+              <a href="https://www.simoncommunity.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">London</td>
+            </tr>
+            <!-- Simon Community (Northern Ireland) -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Simon Community<br>(Northern Ireland)
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Emergency accommodation, advice and community support for people who are homeless</td>
+              <td class="govuk-table__cell"><nobr>0800 171 2222</nobr><br>
+              <a href="https://www.simoncommunity.org.uk/">Website</a>
+              </td>
+              <td class="govuk-table__cell">Northern Ireland</td>
+            </tr>
+            <!-- St Mungo's Broadway -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">St Mungo's Broadway
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Emergency accommodation and support for people who are homeless</td>
+              <td class="govuk-table__cell"><nobr>0345 363 3632</nobr><br>
+              <a href="www.mungosbroadway.org.uk">Website</a><br>
+              streetconcern@mungos.org 
+              </td>
+              <td class="govuk-table__cell">London and South East England</td>
+            </tr>
+            <!-- Move On -->
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__header">Move On
+                <span class="search-tags">Homelessness</span>
+              </td>
+              <td class="govuk-table__cell">Support for homeless people</td>
+              <td class="govuk-table__cell">Glasgow: <nobr>0141 221 2272<nobr><br>Edinburgh: <nobr>0131 558 3740</nobr><br>
+              <a href="http://www.moveon.org.uk/">Website</a><br>
+              mail@moveon.org.uk
+              </td>
+              <td class="govuk-table__cell">London and South East England</td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+
+    </div>
+</div>
+
+{% endblock %}

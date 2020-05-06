@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Forms | BRC support line manual
+  Consent | BRC support line manual
 {% endblock %}
 
 {% block beforeContent %}
@@ -11,10 +11,10 @@
         <a class="govuk-breadcrumbs__link" href="/">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/personal-information">Personal information</a>
+        <a class="govuk-breadcrumbs__link" href="/data-sharing">Personal information</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Forms</a>
+        <a class="govuk-breadcrumbs__link">Consent</a>
       </li>
     </ol>
   </div>
@@ -25,18 +25,22 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Record information from calls</h1>
+      <h1 class="govuk-heading-xl">Consent to collect and share information</h1>
 
-      <p class="govuk-body">Use this form to:</p>
+      <p>People giving consent to collect and share information has three steps:</p>
 
-      <ol class="govuk-list govuk-list--bullet">
-        <li>Record useful from the call</li>
-        <li>Refer someone for urgent practical supoort from our regional teams</li>
-      </ol>      
+      <ul class="govuk-list govuk-list--number">
+        <li>
+          They've been told <a href="/personal-information/what-to-collect">what information is collected</a>
+        </li>
+        <li>
+          They've been told <a href="/personal-information/explaining-use">who information is shared with and why</a>
+        </li>
+        <li>
+          Their consent has been <a href="/personal-information/forms">recorded in a safe place</a>
+        </li>
+      </ul>
 
-      <p>Collecting information online will speed up how fast information can be used to help get people other support.</p>
-
-      <a id="button" class="govuk-button black-button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=ujzc_l7KiEOoN7Rcfw1xt5kGY0JVEcBGpeViRFdNpWNUOENYTjdZVlVQQ09FVlNWOEROTUxEMVlIMi4u" target="_blank">Fill out online form</a></p>
 
       {% include "includes/related-content.html" %}
       <ul id="related-links" class="govuk-list">
@@ -50,7 +54,7 @@
           {% include "nav-links/personal-information/explaining-use.html" %}
         </li>
         <li>
-          {% include "nav-links/personal-information/consent.html" %}
+          {% include "nav-links/personal-information/forms.html" %}
         </li>
       </ul>
 
