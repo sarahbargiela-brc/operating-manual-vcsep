@@ -1,0 +1,65 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Who provides this service | VCS EP manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">About</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Who provides this service</h1>
+
+      <p class="govuk-body">The Voluntary and Community Sector Emergencies Partnership is made up of a range of organisations         within the sector with the aim of improving coordination at national and local levels before, during and after                 emergencies.
+      </p>
+      <h2 class="govuk-heading-m">List of partners</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>British Red Cross</li>
+        <li>Business in the Community</li>
+        <li>St John Ambulance</li>
+        <li>National Association for Voluntary and Community Action</li>
+        <li>National Council for Voluntary Organisations</li>
+        <li>National Emergencies Trust</li>
+        <li>National Police Chiefs Council</li>
+        <li>Muslim Aid</li>
+        <li>Salvation Army</li>
+        <li>UK Community Foundations</li>
+        <li>Victim Support</li>
+        <li>Association of Greater Manchester Authorities</li>
+        <li>Cabinet Office</li>
+        <li>Ministry of Housing, Communities and Local Government</li>
+      </ul>
+
+      <ul class="govuk-list">
+        <li>
+          {% include "nav-links/who-is-service-for.html" %}
+        </li>
+        <li>
+          {% include "nav-links/what-support-it-offers.html" %}
+        </li>
+        <li>
+          {% include "nav-links/how-it-works.html" %}
+        </li>
+        <li>
+          {% include "nav-links/response-times.html" %}
+        </li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}
