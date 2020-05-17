@@ -9,63 +9,176 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        {% include "nav-links/get-support-for-orgs.html" %}
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">Who is the service for, what support it offers, how it works, response times</p>
+      <h4 class="govuk-heading-s">About the service</h4>
+
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/who-is-service-for.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/what-support-it-offers.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/how-it-works.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/response-times.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/vcsep-partners.html" %}
+        </li>
+      </ul>
     </div>
+
     <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/being-a-liaison-lead">Being a liaison lead</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">What a liaison lead is, how liaison leads work, working with information managers</p>
+      <h4 class="govuk-heading-s">Being a liaison lead</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/being-a-liaison-lead/step-by-step-liaison-leads.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-a-liaison-lead/what-is-a-liaison-lead.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-a-liaison-lead/how-liaison-leads-work.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-a-liaison-lead/liaison-leads-covid-19.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-a-liaison-lead/lines-of-reporting.html" %}
+        </li>
+      </ul>
     </div>
+
     <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/being-an-information-manager">Being an information manager</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">What an information manager is, how information managers work, working with liaison leads</p>
+      <h4 class="govuk-heading-s">Being an information manager</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/being-an-information-manager/information-managers-step-by-step.html" %}
+          </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-an-information-manager/what-is-an-information-manager.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-an-information-manager/how-information-managers-work.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-an-information-manager/information-managers-for-covid-19.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/being-an-information-manager/lines-of-reporting.html" %}
+        </li>
+      </ul>
     </div>
+
+
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Using SharePoint</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/using-sharepoint/glossary-of-terms.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/using-sharepoint/sharepoint-for-information-managers.html" %}
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Staying local or escalating</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/staying-local-or-escalating/index.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/staying-local-or-escalating/brokering-local-support.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/staying-local-or-escalating/escalating-a-request.html" %}
+        </li>
+    </div>
+
+
+<div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Data Sharing</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/data-sharing/information-governance-training.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/data-sharing/what-to-collect.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/data-sharing/what-not-to-collect.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/data-sharing/what-share-when.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/data-sharing/how-using-information.html" %}
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Following up with organisations</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/following-up-with-orgs/getting-information-for-request.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/following-up-with-orgs/ongoing-support.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/following-up-with-orgs/update-organisation.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/following-up-with-orgs/close-request-sharepoint.html" %}
+        </li>
+    </div>
+
+
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Email templates</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/email-templates/index.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/email-templates/templates-for-liaison-leads.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/email-templates/templates-for-information-managers.html" %}
+        </li>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <h4 class="govuk-heading-s">Useful Contacts</h4>
+        <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/useful-contacts/information-managers.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/useful-contacts/liaison-leads.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/useful-contacts/local-authority-hubs.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/useful-contacts/local-resilience-fora.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/useful-contacts/regional-tactical-cell-duty-managers.html" %}
+        </li>
+    </div>
+
   </div>
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/using-sharepoint">Using the SharePoint database</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">SharePoint for information managers, glossary of terms in SharePoint</p>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-       <a href="/managing-requests/index.html">Managing requests</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">Triaging as a liaison lead, brokering local support, escalating a request, making a request on behalf of a local organisation</p>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/data-sharing">Data sharing</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">What to collect, what not to collect, privacy</p>
-    </div>
-  </div>
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/following-up-with-orgs">Following up with organisations</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">Getting further information for a request, updating organisations with next steps, closing a referral in SharePoint</p>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="/useful-contacts">Useful contacts</a>
-      </h4>
-      <p class="govuk-body govuk-!-font-size-16">Contact information for liaison leads and information managers working on the service</p>
-    </div>
-     <div class="govuk-grid-column-one-third">
-      <h4 class="govuk-heading-s" id="home-nav-link">
-        <a href="email-templates/index">Email templates</a>
-      <p class="govuk-body govuk-!-font-size-16">Email templates for liaison leads and information managers</p>
-    </div></h4>
-  </div>
+
+
 
 
 {% endblock %}
