@@ -1,0 +1,74 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/templates">Templates</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Twitter</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Twitter template</h1>
+
+      <p class="govuk-body">Use this text and image to promote the {% include "includes/service-name.html" %} on Twitter:</p>
+
+      <h3 class="govuk-heading-m">Text template</h3>
+      <div class="govuk-panel govuk-panel--confirmation copy-box">
+        <div class="govuk-panel__body CopyThisText">
+          If you have been affected by <nobr>[#emergency-name]</nobr> you can speak to someone to get confidential advice and support. Including <nobr>[support-example-1]</nobr> and <nobr>[support-example-2]</nobr>.
+          <br><br>
+          Call free {% include "includes/phone-number.html" %}. Open 24 hours a day. Run by British Red Cross and Victim Support.
+        </div>
+      </div>
+      
+      {% include "includes/copy-button.html" %}
+
+      <h3 class="govuk-heading-m">Image</h3>
+      <p>Image size: 440 x 220 pixels</p>
+      <img src="/public/images/National-Emergencies-Support-Line-share-Twitter.jpg" style="width: 100%;" alt="A smiling woman wearing a phone headset">
+
+      <p style="margin-top: 10px;"><a href="/public/images/National-Emergencies-Support-Line-share-Twitter.jpg" download>Download image</a></p>
+
+      {% include "includes/related-templates.html" %}
+
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/facebook.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/website-banner.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/web-page.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/text-message.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/automated-voice.html" %}
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

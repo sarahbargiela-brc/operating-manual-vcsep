@@ -1,0 +1,67 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/templates">Templates</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Text message</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Text message template</h1>
+
+      <p class="govuk-body">Use this text to promote the {% include "includes/service-name.html" %} with text messages.</p>
+
+      <div class="govuk-panel govuk-panel--confirmation copy-box">
+        <div class="govuk-panel__body CopyThisText">
+          If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support. 
+          <br><br>
+          Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support.
+        </div>
+      </div>
+      
+      {% include "includes/copy-button.html" %}
+
+      {% include "includes/related-templates.html" %}
+
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/facebook.html" %}
+        </li>        
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/twitter.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/website-banner.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/web-page.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/templates/automated-voice.html" %}
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
