@@ -2,7 +2,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  NESL Operating Manual
+  VCSEP Service Manual
 {% endblock %}
 
 {% block beforeContent %}
@@ -27,14 +27,14 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">Twitter template</h1>
 
-      <p class="govuk-body">Use this text and image to promote the {% include "includes/service-name.html" %} on Twitter:</p>
+      <p class="govuk-body">Use this text and image to promote the 'Request support as a voluntary or community organisation' service on Twitter:</p>
 
       <h3 class="govuk-heading-m">Text template</h3>
       <div class="govuk-panel govuk-panel--confirmation copy-box">
         <div class="govuk-panel__body CopyThisText">
-          If you have been affected by <nobr>[#emergency-name]</nobr> you can speak to someone to get confidential advice and support. Including <nobr>[support-example-1]</nobr> and <nobr>[support-example-2]</nobr>.
+          Volunteer at, work at or represent a local group who need extra support providing #COVID19UK relief? Use the new VCSEP service, 'Request support as a voluntary or community organisation'.
           <br><br>
-          Call free {% include "includes/phone-number.html" %}. Open 24 hours a day. Run by British Red Cross and Victim Support.
+          Just complete the webform with details of the needed support. https://www.redcross.org.uk/vcsep-support
         </div>
       </div>
       
@@ -50,19 +50,19 @@
 
       <ul class="govuk-list">
         <li id="homepage-link-list">
-          {% include "nav-links/templates/facebook.html" %}
+          {% include "nav-links/liaison-lead-comms/facebook.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/website-banner.html" %}
+          {% include "nav-links/liaison-lead-comms/website-banner.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/web-page.html" %}
+          {% include "nav-links/liaison-lead-comms/web-page.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/text-message.html" %}
+          {% include "nav-links/liaison-lead-comms/text-message.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/automated-voice.html" %}
+          {% include "nav-links/liaison-lead-comms/automated-voice.html" %}
         </li>
       </ul>
 

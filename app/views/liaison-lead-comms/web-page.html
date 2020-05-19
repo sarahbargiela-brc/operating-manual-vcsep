@@ -2,7 +2,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  NESL Operating Manual
+  VCSEP Service Manual
 {% endblock %}
 
 {% block beforeContent %}
@@ -27,21 +27,29 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">Web page template</h1>
 
-      <p class="govuk-body">Use this text for a web page about the {% include "includes/service-name.html" %} on your organisation's website.</p>
+      <p class="govuk-body">Use this text for a web page about the VCSEP 'Request support as a voluntary or community organisation' service on your organisation's website.</p>
 
       <div class="govuk-panel govuk-panel--confirmation copy-box">
         <div class="govuk-panel__body CopyThisText">
           <strong>{% include "includes/service-name.html" %}</strong>  
           <br><br>
-          If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support.  
+            Volunteer at, work at or represent a local group who need extra support providing #COVID19UK relief? Use the new VCSEP service, 'Request support as a voluntary or community organisation'.
           <br><br>
-          Call free {% include "includes/phone-number.html" %}. Open 24 hours a day. Run by British Red Cross and Victim Support.
+          Just complete a webform with details of the needed support.
           <br><br>
-          Confidential advice and support available, including:
+          Types of support available:
           <br><br>
-          <ul class="govuk-list govuk-list--bullet" style="margin-bottom: 0px;">
-            {% include "includes/advice-support-available.html" %}
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Transportation or delivery including medicine</li>
+            <li>Personal protective equipment</li>
+            <li>Financial support and advice</li>
+            <li>Specialist training</li>
+            <li>Guidance</li>
+            <li>Mental health support and wellbeing</li>
+            <li>Volunteers</li>
           </ul>
+          <p><a href="url">Go to VCSEP.support, the Voluntary and Community Sector Emergencies Partnership website</a>
+          </p>
         </div>
       </div>
       
@@ -51,19 +59,19 @@
 
       <ul class="govuk-list">
         <li id="homepage-link-list">
-          {% include "nav-links/templates/facebook.html" %}
+          {% include "nav-links/liaison-lead-comms/facebook.html" %}
         </li>        
         <li id="homepage-link-list">
-          {% include "nav-links/templates/twitter.html" %}
+          {% include "nav-links/liaison-lead-comms/twitter.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/website-banner.html" %}
+          {% include "nav-links/liaison-lead-comms/website-banner.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/text-message.html" %}
+          {% include "nav-links/liaison-lead-comms/text-message.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/templates/automated-voice.html" %}
+          {% include "nav-links/liaison-lead-comms/automated-voice.html" %}
         </li>
       </ul>
 
