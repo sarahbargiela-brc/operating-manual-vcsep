@@ -1,0 +1,65 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Asking liaison lead to review request | VCS EP Service manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/email-templates">Email templates</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/email-templates/for-information-managers">For Information managers</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Requests for multiagency cells to review</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Asking multiagency cell members to review support requests</h1>
+      <p class="govuk-body">Send this email to a multiagency cell distribution list to share support requests from local organisations ready for their review.</p>
+      <h2 class="govuk-heading-l">Checklist</h2>
+      <p>1. Copy and paste example text below into the email.</p>
+      <p>2. Copy and paste the request reports into the email.</p>
+      <p>3. Add the multiagency cell distribution list.</p>
+
+      <hr class="govuk-section-break govuk-section-break--visible">
+      <br>
+      <br>
+      <p>Dear [Name of Cell] members </p>
+      <p>Re: Requests ready for multiagency cell review</p>
+      <p>Please review the following requests for support made by local organisations in the [name of cell] area.</p>
+      <p>Request ID: [ ]</p>
+      <p>Request link: [ ]</p>
+
+      <p><strong>If the request is urgent, it can be brokered ahead of the next multiagency cell meeting.</strong></p>
+      <p><a href="/being-a-broker/how-brokers-work">Follow the guidance on handling urgent requests.<a></p>
+
+      <p>For support editing records in SharePoint, contact an information manager.</p>
+      <p>Many thanks,</p>
+      <p>Information Manager</p>
+      <p>'Request support as a voluntary or community organisation' service</p>
+ <hr class="govuk-section-break govuk-section-break--visible">
+      <br>
+      <br>
+      <p>We recommend you set up and save this example response as a draft email, and copy it from there each time you need to use it.</p>
+</div>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
